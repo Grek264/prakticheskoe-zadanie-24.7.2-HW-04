@@ -1,3 +1,5 @@
-# test_user_log.py
-valid_email = "mahin.greg@yandex.ru"
-valid_password = "Grek1234"
+import os
+
+
+valid_email = os.getenv("PETFRIENDS_EMAIL", "")
+valid_password = os.getenv("PETFRIENDS_PASSWORD", "")
